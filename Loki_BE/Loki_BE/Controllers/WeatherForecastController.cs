@@ -26,8 +26,14 @@ namespace Loki_BE.Controllers
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
                 TemperatureC = Random.Shared.Next(-20, 55),
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+            }).ToArray();
+        }
+
+        [HttpGet("GetHelloWorld")]
+        public string GetHelloWorld(int numOne, int numTwo)
+        {
+            var result = numOne + numTwo;
+            return "HelloWorld" + result;
         }
     }
 }
