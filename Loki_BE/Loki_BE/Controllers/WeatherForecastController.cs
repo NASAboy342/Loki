@@ -38,5 +38,19 @@ namespace Loki_BE.Controllers
             var result = numOne + numTwo;
             return "HelloWorld" + result;
         }
+
+        [HttpGet("IsPositive")]
+        public string IsPositive(string value)
+        {
+            int iv = Convert.ToInt32(value);
+            if(iv >= 0)
+            {
+                return "True";
+            }
+            else
+            {
+                return "False";
+            }
+        }
     }
 }
