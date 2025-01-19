@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Loki_BE.Controllers
@@ -38,5 +39,13 @@ namespace Loki_BE.Controllers
             var result = numOne + numTwo;
             return "HelloWorld" + result;
         }
+        [HttpGet("GetRandomNumber")]
+        public int GetRandomNumber() {
+            Random random = new Random();
+
+            int randomNumber = random.Next(1, 10);
+            return randomNumber;
+        }
+
     }
 }
