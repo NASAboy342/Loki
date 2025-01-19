@@ -32,6 +32,8 @@ namespace Loki_BE.Controllers
         [HttpGet("GetHelloWorld")]
         public string GetHelloWorld(int numOne, int numTwo)
         {
+
+
             var result = numOne + numTwo;
             return "HelloWorld" + result;
         }
