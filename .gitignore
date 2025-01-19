@@ -112,3 +112,5 @@ Thumbs.db
 # Ignore lock files
 package-lock.json
 yarn.lock
+Loki_BE/Loki_DB/Loki_DB.dbmdl
+Loki_BE/Loki_DB/Loki_DB.jfm
